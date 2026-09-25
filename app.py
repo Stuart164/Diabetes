@@ -13,7 +13,7 @@ st.markdown("Predict the likelihood of diabetes based on standard health metrics
 # 1. Load and prepare dataset
 @st.cache_resource
 def train_model():
-    data = pd.read_csv("diabetes.csv")
+    data = pd.read_csv("dataset.csv")
     
     # Matching the 4 features required by the project specifications
     features = ['Glucose', 'BloodPressure', 'BMI', 'Age']
